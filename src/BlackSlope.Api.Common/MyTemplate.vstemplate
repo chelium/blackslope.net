@@ -15,7 +15,7 @@
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="BlackSlope.Api.Common.csproj" File="BlackSlope.Api.Common.csproj" ReplaceParameters="true">
+    <Project TargetFileName="$safeprojectname$.Api.Common.csproj" File="BlackSlope.Api.Common.csproj" ReplaceParameters="true">
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
       </Folder>
@@ -33,9 +33,9 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="ApiHttpStatusCode.cs">ApiHttpStatusCode.cs</ProjectItem>
       </Folder>
       <Folder Name="Extensions" TargetFolderName="Extensions">
-        <ProjectItem ReplaceParameters="true" TargetFileName="BlackSlopeBuilderExtensions.cs">BlackSlopeBuilderExtensions.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="BlackSlopeHostBuilderExtenstions.cs">BlackSlopeHostBuilderExtenstions.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="BlackSlopeServiceCollectionExtensions.cs">BlackSlopeServiceCollectionExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$BuilderExtensions.cs">BlackSlopeBuilderExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$HostBuilderExtenstions.cs">BlackSlopeHostBuilderExtenstions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$ServiceCollectionExtensions.cs">BlackSlopeServiceCollectionExtensions.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="EnumerationExtension.cs">EnumerationExtension.cs</ProjectItem>
       </Folder>
       <Folder Name="Middleware" TargetFolderName="Middleware">
@@ -59,8 +59,8 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="DocumentFilterAddHealth.cs">DocumentFilterAddHealth.cs</ProjectItem>
       </Folder>
       <Folder Name="Validators" TargetFolderName="Validators">
-        <ProjectItem ReplaceParameters="true" TargetFileName="BlackslopeValidator.cs">BlackslopeValidator.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="IBlackslopeValidator.cs">IBlackslopeValidator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Validator.cs">BlackslopeValidator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="I$safeprojectname$Validator.cs">IBlackslopeValidator.cs</ProjectItem>
       </Folder>
       <Folder Name="Version" TargetFolderName="Version">
         <Folder Name="Interfaces" TargetFolderName="Interfaces">
