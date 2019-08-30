@@ -1,0 +1,84 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BlackSlope.Api.Common</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BlackSlope.Api.Common</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="BlackSlope.Api.Common.csproj" File="BlackSlope.Api.Common.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationInsightsConfig.cs">ApplicationInsightsConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AzureAdConfig.cs">AzureAdConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HostConfig.cs">HostConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SerilogConfig.cs">SerilogConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SwaggerConfig.cs">SwaggerConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseController.cs">BaseController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Enumerators" TargetFolderName="Enumerators">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiHttpStatusCode.cs">ApiHttpStatusCode.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlackSlopeBuilderExtensions.cs">BlackSlopeBuilderExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlackSlopeHostBuilderExtenstions.cs">BlackSlopeHostBuilderExtenstions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlackSlopeServiceCollectionExtensions.cs">BlackSlopeServiceCollectionExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EnumerationExtension.cs">EnumerationExtension.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Middleware" TargetFolderName="Middleware">
+        <Folder Name="Correlation" TargetFolderName="Correlation">
+          <Folder Name="Extensions" TargetFolderName="Extensions">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CorrelationServiceCollectionExtension.cs">CorrelationServiceCollectionExtension.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CorrelationId.cs">CorrelationId.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CorrelationIdHeaderReader.cs">CorrelationIdHeaderReader.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CorrelationIdMiddleware.cs">CorrelationIdMiddleware.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CurrentCorrelationIdService.cs">CurrentCorrelationIdService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ICorrelationIdRequestReader.cs">ICorrelationIdRequestReader.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ICorrelationIdResponseWriter.cs">ICorrelationIdResponseWriter.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ICurrentCorrelationIdService.cs">ICurrentCorrelationIdService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="ExceptionHandling" TargetFolderName="ExceptionHandling">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionHandlingMiddleware.cs">ExceptionHandlingMiddleware.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Swagger" TargetFolderName="Swagger">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DocumentFilterAddHealth.cs">DocumentFilterAddHealth.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validators" TargetFolderName="Validators">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlackslopeValidator.cs">BlackslopeValidator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IBlackslopeValidator.cs">IBlackslopeValidator.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Version" TargetFolderName="Version">
+        <Folder Name="Interfaces" TargetFolderName="Interfaces">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IVersionService.cs">IVersionService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Services" TargetFolderName="Services">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyVersionService.cs">AssemblyVersionService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="JsonVersionService.cs">JsonVersionService.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Version.cs">Version.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="version.json">version.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="VersionController.cs">VersionController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiError.cs">ApiError.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiException.cs">ApiException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiResponse.cs">ApiResponse.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
