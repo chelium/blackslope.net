@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlackSlope.Api.Repositories.Movies.Events;
 using BlackSlope.Repositories.Movies.Context;
 using BlackSlope.Repositories.Movies.DtoModels;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlackSlope.Repositories.Movies
@@ -11,6 +13,7 @@ namespace BlackSlope.Repositories.Movies
     public class MovieRepository : IMovieRepository
     {
         private readonly MovieContext _context;
+        private readonly IBusControl _bus;
 
         public MovieRepository(MovieContext movieContext)
         {
@@ -21,6 +24,12 @@ namespace BlackSlope.Repositories.Movies
         {
             await _context.Movies.AddAsync(movie);
             await _context.SaveChangesAsync();
+            await _bus.Send<IMovieCreatedEvent>(new MovieCreatedEvent()
+            {
+                Id = movie.Id,
+                Timestamp = DateTime.Now,
+                Created = movie
+            });
 
             return movie;
         }

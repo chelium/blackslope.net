@@ -1,23 +1,17 @@
-﻿using System.Reflection;
-using BlackSlope.Repositories.Movies;
+﻿using BlackSlope.Repositories.Movies;
 using BlackSlope.Repositories.Movies.Configuration;
 using BlackSlope.Repositories.Movies.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class MovieRepositoryServiceCollectionExtensions
     {
-        public static IServiceCollection AddMovieRepository(this IServiceCollection services,
-            IConfiguration configuration)
+        public static IServiceCollection AddMovieRepository(this IServiceCollection services, IMovieRepositoryConfiguration config)
         {
             services.TryAddScoped<IMovieRepository, MovieRepository>();
-
-            var config = configuration.GetSection(Assembly.GetExecutingAssembly().GetName().Name)
-                .Get<MovieRepositoryConfiguration>();
-            services.TryAddSingleton<IMovieRepositoryConfiguration>(config);
+            services.TryAddSingleton(config);
 
             var serviceProvider = services.BuildServiceProvider();
             var movieContext = serviceProvider.GetService<MovieContext>();

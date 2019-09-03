@@ -6,6 +6,7 @@ using BlackSlope.Api.Common.Middleware.Correlation;
 using BlackSlope.Api.Common.Middleware.ExceptionHandling;
 using BlackSlope.Api.Common.Version.Interfaces;
 using BlackSlope.Api.Common.Version.Services;
+using BlackSlope.Repositories.Movies.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -39,7 +40,10 @@ namespace BlackSlope.Api
             services.AddHealthChecksService();
 
             services.AddMovieService();
-            services.AddMovieRepository(_configuration);
+
+            var config = _configuration.GetSection(Assembly.GetExecutingAssembly().GetName().Name)
+                .Get<MovieRepositoryConfiguration>();
+            services.AddMovieRepository(config);
             services.AddMovieValidators();
         }
 
