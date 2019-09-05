@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using BlackSlope.Api.Operations.Movies.MapperProfiles;
+using BlackSlope.Api.Movies.MapperProfiles;
 
-namespace BlackSlope.Api.Operations.Movies.Extensions
+namespace BlackSlope.Api.Extensions
 {
     public static class MapperConfigurationExpressionExtensions
     {

@@ -1,11 +1,11 @@
 ﻿using BlackSlope.Api.Common.Validators;
-using BlackSlope.Api.Operations.Movies.Enumerators;
-using BlackSlope.Api.Operations.Movies.Requests;
-using BlackSlope.Api.Operations.Movies.Validators.Interfaces;
+using BlackSlope.Api.Movies.Enumerators;
+using BlackSlope.Api.Movies.Requests;
+using BlackSlope.Api.Movies.Validators.Interfaces;
 using BlackSlope.Services.Movies;
 using FluentValidation;
 
-namespace BlackSlope.Api.Operations.Movies.Validators
+namespace BlackSlope.Api.Movies.Validators
 {
     public class CreateMovieRequestValidator : BlackslopeValidator<CreateMovieRequest>, ICreateMovieRequestValidator
     {

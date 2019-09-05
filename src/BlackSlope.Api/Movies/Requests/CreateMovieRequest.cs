@@ -1,6 +1,6 @@
-﻿using BlackSlope.Api.Operations.Movies.ViewModels;
+﻿using BlackSlope.Api.Movies.ViewModels;
 
-namespace BlackSlope.Api.Operations.Movies.Requests
+namespace BlackSlope.Api.Movies.Requests
 {
     public class CreateMovieRequest
     {

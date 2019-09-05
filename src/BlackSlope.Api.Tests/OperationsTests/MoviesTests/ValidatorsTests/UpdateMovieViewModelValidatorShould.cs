@@ -1,6 +1,6 @@
 ﻿using AutoFixture;
-using BlackSlope.Api.Operations.Movies.Validators;
-using BlackSlope.Api.Operations.Movies.ViewModels;
+using BlackSlope.Api.Movies.Validators;
+using BlackSlope.Api.Movies.ViewModels;
 using BlackSlope.Services.Movies;
 using FluentValidation.TestHelper;
 using Moq;

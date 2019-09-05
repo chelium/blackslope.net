@@ -2,16 +2,16 @@
 using System.Threading.Tasks;
 using AutoMapper;
 using BlackSlope.Api.Common.Controllers;
-using BlackSlope.Api.Operations.Movies.Requests;
-using BlackSlope.Api.Operations.Movies.Responses;
-using BlackSlope.Api.Operations.Movies.Validators.Interfaces;
-using BlackSlope.Api.Operations.Movies.ViewModels;
+using BlackSlope.Api.Movies.Requests;
+using BlackSlope.Api.Movies.Responses;
+using BlackSlope.Api.Movies.Validators.Interfaces;
+using BlackSlope.Api.Movies.ViewModels;
 using BlackSlope.Services.Movies;
 using BlackSlope.Services.Movies.DomainModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlackSlope.Api.Operations.Movies
+namespace BlackSlope.Api.Movies
 {
     // TODO: enable this once authentication middleware has been configured
     //[Authorize]

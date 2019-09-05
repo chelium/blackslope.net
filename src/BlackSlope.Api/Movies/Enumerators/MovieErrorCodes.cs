@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace BlackSlope.Api.Operations.Movies.Enumerators
+namespace BlackSlope.Api.Movies.Enumerators
 {
     public enum MovieErrorCode
     {

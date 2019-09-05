@@ -1,7 +1,7 @@
-﻿using BlackSlope.Api.Operations.Movies.ViewModels;
+﻿using BlackSlope.Api.Movies.ViewModels;
 using System.Collections.Generic;
 
-namespace BlackSlope.Api.Operations.Movies.Responses
+namespace BlackSlope.Api.Movies.Responses
 {
     public class DeletedMovieResponse
     {

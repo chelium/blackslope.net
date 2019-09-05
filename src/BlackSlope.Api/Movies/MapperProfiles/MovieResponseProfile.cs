@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using BlackSlope.Api.Operations.Movies.ViewModels;
+using BlackSlope.Api.Movies.ViewModels;
 using BlackSlope.Services.Movies.DomainModels;
 
-namespace BlackSlope.Api.Operations.Movies.MapperProfiles
+namespace BlackSlope.Api.Movies.MapperProfiles
 {
     public class MovieResponseProfile : Profile
     {

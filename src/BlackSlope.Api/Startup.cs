@@ -44,7 +44,6 @@ namespace BlackSlope.Api
             var config = _configuration.GetSection(Assembly.GetExecutingAssembly().GetName().Name)
                 .Get<MovieRepositoryConfiguration>();
             services.AddMovieRepository(config);
-            services.AddMovieValidators();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

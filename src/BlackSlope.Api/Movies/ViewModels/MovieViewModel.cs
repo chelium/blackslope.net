@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlackSlope.Api.Operations.Movies.ViewModels
+namespace BlackSlope.Api.Movies.ViewModels
 {
     public class MovieViewModel
     {

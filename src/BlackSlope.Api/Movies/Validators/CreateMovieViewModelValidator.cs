@@ -1,10 +1,10 @@
 ﻿using BlackSlope.Api.Common.Validators;
-using BlackSlope.Api.Operations.Movies.Enumerators;
-using BlackSlope.Api.Operations.Movies.ViewModels;
+using BlackSlope.Api.Movies.Enumerators;
+using BlackSlope.Api.Movies.ViewModels;
 using BlackSlope.Services.Movies;
 using FluentValidation;
 
-namespace BlackSlope.Api.Operations.Movies.Validators
+namespace BlackSlope.Api.Movies.Validators
 {
     public class CreateMovieViewModelValidator : BlackslopeValidator<CreateMovieViewModel>
     {
