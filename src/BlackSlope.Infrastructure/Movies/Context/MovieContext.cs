@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Reflection;
 using BlackSlope.Infrastructure.Movies.Configuration;
+using BlackSlope.Infrastructure.Movies.Context.Extensions;
 using BlackSlope.Infrastructure.Movies.DtoModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;

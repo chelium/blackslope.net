@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using BlackSlope.Repositories.Movies;
-using BlackSlope.Repositories.Movies.DtoModels;
+using BlackSlope.Infrastructure.Movies;
+using BlackSlope.Infrastructure.Movies.DtoModels;
 using BlackSlope.Services.Movies.DomainModels;
 
 namespace BlackSlope.Services.Movies

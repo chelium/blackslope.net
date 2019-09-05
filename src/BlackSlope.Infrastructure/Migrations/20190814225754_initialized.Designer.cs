@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BlackSlope.Api.Migrations
+namespace BlackSlope.Infrastructure.Migrations
 {
     [DbContext(typeof(MovieContext))]
     [Migration("20190814225754_initialized")]

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BlackSlope.Repositories.Movies.DtoModels;
+using BlackSlope.Infrastructure.Movies.DtoModels;
 using BlackSlope.Services.Movies.DomainModels;
 
 namespace BlackSlope.Services.Movies.MapperProfiles

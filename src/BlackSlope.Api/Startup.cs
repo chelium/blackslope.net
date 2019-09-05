@@ -6,7 +6,7 @@ using BlackSlope.Api.Common.Middleware.Correlation;
 using BlackSlope.Api.Common.Middleware.ExceptionHandling;
 using BlackSlope.Api.Common.Version.Interfaces;
 using BlackSlope.Api.Common.Version.Services;
-using BlackSlope.Repositories.Movies.Configuration;
+using BlackSlope.Infrastructure.Movies.Configuration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

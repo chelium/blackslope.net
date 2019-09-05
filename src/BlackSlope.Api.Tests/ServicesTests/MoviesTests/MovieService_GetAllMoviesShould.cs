@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoFixture;
-using BlackSlope.Repositories.Movies.DtoModels;
+using BlackSlope.Infrastructure.Movies.DtoModels;
 using BlackSlope.Services.Movies.DomainModels;
 using Moq;
 using Xunit;

@@ -1,6 +1,6 @@
 ﻿using AutoFixture;
 using AutoMapper;
-using BlackSlope.Repositories.Movies;
+using BlackSlope.Infrastructure.Movies;
 using BlackSlope.Services.Movies;
 using Moq;
 

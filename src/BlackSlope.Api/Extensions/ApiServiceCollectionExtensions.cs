@@ -1,4 +1,4 @@
-﻿using BlackSlope.Repositories.Movies.Context;
+﻿using BlackSlope.Infrastructure.Movies.Context;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
