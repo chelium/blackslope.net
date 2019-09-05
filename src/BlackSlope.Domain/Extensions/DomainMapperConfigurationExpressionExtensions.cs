@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using BlackSlope.Services.Movies.MapperProfiles;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace BlackSlope.Domain.Extensions
 {
-    public static class MapperConfigurationExpressionExtensions
+    public static class DomainMapperConfigurationExpressionExtensions
     {
         public static IMapperConfigurationExpression AddServicesProfiles(this IMapperConfigurationExpression expression)
         {

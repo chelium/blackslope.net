@@ -1,11 +1,12 @@
 ﻿using AutoMapper;
-using BlackSlope.Api.Extensions;
 using BlackSlope.Api.Movies.Validators;
 using BlackSlope.Api.Movies.Validators.Interfaces;
+using BlackSlope.Domain.Extensions;
 using BlackSlope.Infrastructure.Movies.Context;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace BlackSlope.Api.Extensions
 {
     public static class ApiServiceCollectionExtensions
     {

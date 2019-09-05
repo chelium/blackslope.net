@@ -3,7 +3,7 @@ using BlackSlope.Api.Movies.MapperProfiles;
 
 namespace BlackSlope.Api.Extensions
 {
-    public static class MapperConfigurationExpressionExtensions
+    public static class ApiMapperConfigurationExpressionExtensions
     {
         public static IMapperConfigurationExpression AddOperationsProfiles(this IMapperConfigurationExpression expression)
         {

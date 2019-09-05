@@ -2,9 +2,10 @@
 using BlackSlope.Infrastructure.Movies.Configuration;
 using BlackSlope.Infrastructure.Movies.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace BlackSlope.Infrastructure.Extensions
 {
     public static class InfrastructureServiceCollectionExtensions
     {
