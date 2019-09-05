@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace BlackSlope.Api.Migrations
+namespace BlackSlope.Infrastructure.Migrations
 {
     public partial class seeded : Migration
     {

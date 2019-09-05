@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="MassTransit" Version="5.5.5" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="2.2.0" />
@@ -31,10 +30,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlackSlope.Api.Common\BlackSlope.Api.Common.csproj" />
+    <ProjectReference Include="..\BlackSlope.Domain\BlackSlope.Domain.csproj" />
+    <ProjectReference Include="..\BlackSlope.Infrastructure\BlackSlope.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Operations\Movies\Requests\" />
+    <Folder Include="Movies\Requests\" />
   </ItemGroup>
 
 </Project>

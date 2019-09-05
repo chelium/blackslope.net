@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace BlackSlope.Api.Migrations
+namespace BlackSlope.Infrastructure.Migrations
 {
     public partial class initialized : Migration
     {

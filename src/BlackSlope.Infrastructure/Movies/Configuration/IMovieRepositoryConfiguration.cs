@@ -1,4 +1,4 @@
-﻿namespace BlackSlope.Repositories.Movies.Configuration
+﻿namespace BlackSlope.Infrastructure.Movies.Configuration
 {
     public interface IMovieRepositoryConfiguration
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlackSlope.Repositories.Movies.DtoModels
+namespace BlackSlope.Infrastructure.Movies.DtoModels
 {
     public class MovieDtoModel
     {

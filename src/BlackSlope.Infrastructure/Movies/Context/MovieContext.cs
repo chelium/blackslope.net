@@ -1,13 +1,12 @@
 ﻿using System.IO;
 using System.Reflection;
-using BlackSlope.Api.Repositories.Movies.Context.Extensions;
-using BlackSlope.Repositories.Movies.Configuration;
-using BlackSlope.Repositories.Movies.DtoModels;
+using BlackSlope.Infrastructure.Movies.Configuration;
+using BlackSlope.Infrastructure.Movies.DtoModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace BlackSlope.Repositories.Movies.Context
+namespace BlackSlope.Infrastructure.Movies.Context
 {
     public class MovieContext : DbContext
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using BlackSlope.Repositories.Movies.DtoModels;
+using BlackSlope.Infrastructure.Movies.DtoModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace BlackSlope.Api.Repositories.Movies.Context.Extensions
+namespace BlackSlope.Infrastructure.Movies.Context.Extensions
 {
     public static class ModelBuilderExtensions
     {

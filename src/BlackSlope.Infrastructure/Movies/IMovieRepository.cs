@@ -1,9 +1,9 @@
-﻿using BlackSlope.Repositories.Movies.DtoModels;
+﻿using BlackSlope.Infrastructure.Movies.DtoModels;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BlackSlope.Repositories.Movies
+namespace BlackSlope.Infrastructure.Movies
 {
     public interface IMovieRepository
     {
