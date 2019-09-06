@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlackSlope.Api\BlackSlope.Api.csproj" />
+    <ProjectReference Include="..\BlackSlope.Domain\BlackSlope.Domain.csproj" />
+    <ProjectReference Include="..\BlackSlope.Infrastructure\BlackSlope.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
