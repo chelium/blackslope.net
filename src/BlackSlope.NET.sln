@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackSlope.Domain", "BlackS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackSlope.Infrastructure", "BlackSlope.Infrastructure\BlackSlope.Infrastructure.csproj", "{E6BFB295-0D86-493A-85D0-A4455743045A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{A0324A21-3B88-4781-83BD-BA667FDBEEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackSlope.Client", "BlackSlope.Client\BlackSlope.Client.csproj", "{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +108,12 @@ Global
 		{E6BFB295-0D86-493A-85D0-A4455743045A}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{E6BFB295-0D86-493A-85D0-A4455743045A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6BFB295-0D86-493A-85D0-A4455743045A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +126,7 @@ Global
 		{8904D58B-A6E1-45F7-9B2B-1AB71C09FBDC} = {87D53136-CBF4-4A45-814C-3E5B04965959}
 		{7BDD819D-5D56-427A-B7A6-6E20FED3C871} = {EB4E140A-895B-43A1-A1A5-35535F6175A7}
 		{E6BFB295-0D86-493A-85D0-A4455743045A} = {969C08E7-B65D-4BA8-A911-C7FC0846A074}
+		{A07040BD-623A-43A4-8F9B-CB1A2BCF2293} = {A0324A21-3B88-4781-83BD-BA667FDBEEC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BA508F2C-EE02-4EEC-BA78-020658CB87B7}
