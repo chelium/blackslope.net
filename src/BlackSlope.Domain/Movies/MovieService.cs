@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BlackSlope.Infrastructure.Movies;
 using BlackSlope.Infrastructure.Movies.DtoModels;
-using BlackSlope.Services.Movies.DomainModels;
+using BlackSlope.Domain.Movies.DomainModels;
 
-namespace BlackSlope.Services.Movies
+namespace BlackSlope.Domain.Movies
 {
     public class MovieService : IMovieService
     {

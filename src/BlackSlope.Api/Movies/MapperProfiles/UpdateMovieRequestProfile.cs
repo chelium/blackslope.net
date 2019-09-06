@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BlackSlope.Api.Movies.ViewModels;
-using BlackSlope.Services.Movies.DomainModels;
+using BlackSlope.Domain.Movies.DomainModels;
 
 namespace BlackSlope.Api.Movies.MapperProfiles
 {

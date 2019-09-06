@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlackSlope.Services.Movies.DomainModels
+namespace BlackSlope.Domain.Movies.DomainModels
 {
     public class MovieDomainModel
     {

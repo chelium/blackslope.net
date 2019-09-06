@@ -6,8 +6,8 @@ using BlackSlope.Api.Movies.Requests;
 using BlackSlope.Api.Movies.Responses;
 using BlackSlope.Api.Movies.Validators.Interfaces;
 using BlackSlope.Api.Movies.ViewModels;
-using BlackSlope.Services.Movies;
-using BlackSlope.Services.Movies.DomainModels;
+using BlackSlope.Domain.Movies;
+using BlackSlope.Domain.Movies.DomainModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

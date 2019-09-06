@@ -1,7 +1,7 @@
 ﻿using BlackSlope.Api.Common.Validators;
 using BlackSlope.Api.Movies.Enumerators;
 using BlackSlope.Api.Movies.ViewModels;
-using BlackSlope.Services.Movies;
+using BlackSlope.Domain.Movies;
 using FluentValidation;
 
 namespace BlackSlope.Api.Movies.Validators

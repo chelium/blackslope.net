@@ -1,7 +1,7 @@
 ﻿using AutoFixture;
 using AutoMapper;
 using BlackSlope.Infrastructure.Movies;
-using BlackSlope.Services.Movies;
+using BlackSlope.Domain.Movies;
 using Moq;
 
 namespace BlackSlope.Api.Tests.ServicesTests.MoviesTests

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BlackSlope.Services.Movies.MapperProfiles;
+using BlackSlope.Domain.Movies.MapperProfiles;
 
 namespace BlackSlope.Domain.Extensions
 {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BlackSlope.Services.Movies.DomainModels;
+using BlackSlope.Domain.Movies.DomainModels;
 
-namespace BlackSlope.Services.Movies
+namespace BlackSlope.Domain.Movies
 {
     public interface IMovieService
     {

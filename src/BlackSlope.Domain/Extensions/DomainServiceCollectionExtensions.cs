@@ -1,4 +1,4 @@
-﻿using BlackSlope.Services.Movies;
+﻿using BlackSlope.Domain.Movies;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
