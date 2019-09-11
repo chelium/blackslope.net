@@ -5,6 +5,7 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <UserSecretsId>eeaaec3a-f784-4d04-8b1d-8fe6d9637231</UserSecretsId>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,23 +21,16 @@
   </PropertyGroup>
 
   <Target Name="GenerateOpenApi" AfterTargets="AfterBuild">
-    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:$([System.IO.Path]::Combine('bin', $(Configuration), 'netcoreapp2.2', 'netcoreapp2.2', 'BlackSlope.Api.dll')) /output:openapi.json" />
+    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:bin\$(Configuration)\netcoreapp2.2\netcoreapp2.2\BlackSlope.Api.dll /output:..\BlackSlope.Client\openapi.json" />
   </Target>
-  <!--<Target Name="GenerateOpenApi" AfterTargets="AfterBuild">
-    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:bin\$(Configuration)\netcoreapp2.2\netcoreapp2.2\BlackSlope.Api.dll /output:openapi.json" />
-  </Target>-->
 
-  <!--<Target Name="GenerateOpenApi" AfterTargets="AfterBuild">
-    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:bin\$(Configuration)\netcoreapp2.2\netcoreapp2.2\BlackSlope.Api.dll /output:openapi.json" />
-  </Target>-->
-
-  <!--<Target Name="GenerateNSwagClient" AfterTargets="AfterBuild" DependsOnTargets="GenerateOpenApi">
-    <Exec Command="$(NSwagExe_Core22) openapi2csclient /input:openapi.json /classname:Client /namespace:BlackSlope.Client /output:..\BlackSlope.Client\Client.cs" />
+  <Target Name="GenerateNSwagClient" AfterTargets="AfterBuild" DependsOnTargets="GenerateOpenApi">
+    <Exec Command="$(NSwagExe_Core22) openapi2csclient /input:..\BlackSlope.Client\openapi.json /classname:Client /namespace:BlackSlope.Client /output:..\BlackSlope.Client\Client.cs" />
   </Target>
 
   <Target Name="BuildClient" AfterTargets="AfterBuild" DependsOnTargets="GenerateNSwagClient">
     <MSBuild Projects="..\BlackSlope.Client\BlackSlope.Client.csproj" Targets="Build" />
-  </Target>-->
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
