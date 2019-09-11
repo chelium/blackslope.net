@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BlackSlope.Infrastructure.Movies.Events;
 using BlackSlope.Infrastructure.Movies.Context;
 using BlackSlope.Infrastructure.Movies.DtoModels;
 using Microsoft.EntityFrameworkCore;
