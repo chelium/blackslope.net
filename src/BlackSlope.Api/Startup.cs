@@ -1,5 +1,6 @@
 ﻿using System.IO.Abstractions;
 using System.Reflection;
+using AutoMapper;
 using BlackSlope.Api.Common.Configurtion;
 using BlackSlope.Api.Common.Extensions;
 using BlackSlope.Api.Common.Middleware.Correlation;
@@ -30,9 +31,9 @@ namespace BlackSlope.Api
             ApplicationConfiguration(services);
             CorsConfiguration(services);
 
-            services.AddSwagger(HostConfig.Swagger);
+            //services.AddSwagger(HostConfig.Swagger);
             services.AddAzureAd(HostConfig.AzureAd);
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(Startup));
             services.AddCorrelation();
             services.AddTransient<IFileSystem, FileSystem>();
             services.AddTransient<IVersionService, AssemblyVersionService>();

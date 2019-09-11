@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using AutoMapper;
 using BlackSlope.Api.Common.Configurtion;
 using BlackSlope.Api.Common.Swagger;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -76,25 +72,5 @@ namespace Microsoft.Extensions.DependencyInjection
                 options.Authority = string.Format(azureAdConfig.AadInstance, azureAdConfig.Tenant);
                 options.Audience = azureAdConfig.Audience;
             });
-
-        /// <summary>
-        /// Add AutoMapper service to the Service Collection and configure it
-        /// </summary>
-        /// <param name="services"></param>
-        /// <returns></returns>
-        public static IServiceCollection AddAutoMapper(this IServiceCollection services)
-        {
-            services.TryAddSingleton(GenerateMapperConfiguration());
-            return services;
-        }
-
-        private static IMapper GenerateMapperConfiguration()
-        {
-            var config = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfiles(Assembly.GetExecutingAssembly().GetName().Name);
-            });
-            return config.CreateMapper();
-        }
     }
 }

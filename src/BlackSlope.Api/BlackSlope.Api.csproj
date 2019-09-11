@@ -19,13 +19,39 @@
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
+  <Target Name="GenerateOpenApi" AfterTargets="AfterBuild">
+    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:$([System.IO.Path]::Combine('bin', $(Configuration), 'netcoreapp2.2', 'netcoreapp2.2', 'BlackSlope.Api.dll')) /output:openapi.json" />
+  </Target>
+  <!--<Target Name="GenerateOpenApi" AfterTargets="AfterBuild">
+    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:bin\$(Configuration)\netcoreapp2.2\netcoreapp2.2\BlackSlope.Api.dll /output:openapi.json" />
+  </Target>-->
+
+  <!--<Target Name="GenerateOpenApi" AfterTargets="AfterBuild">
+    <Exec Command="$(NSwagExe_Core22) webapi2openapi /assembly:bin\$(Configuration)\netcoreapp2.2\netcoreapp2.2\BlackSlope.Api.dll /output:openapi.json" />
+  </Target>-->
+
+  <!--<Target Name="GenerateNSwagClient" AfterTargets="AfterBuild" DependsOnTargets="GenerateOpenApi">
+    <Exec Command="$(NSwagExe_Core22) openapi2csclient /input:openapi.json /classname:Client /namespace:BlackSlope.Client /output:..\BlackSlope.Client\Client.cs" />
+  </Target>
+
+  <Target Name="BuildClient" AfterTargets="AfterBuild" DependsOnTargets="GenerateNSwagClient">
+    <MSBuild Projects="..\BlackSlope.Client\BlackSlope.Client.csproj" Targets="Build" />
+  </Target>-->
+
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.2105168" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.0.6" />
+    <PackageReference Include="NSwag.Core" Version="13.0.6" />
+    <PackageReference Include="NSwag.MSBuild" Version="13.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NSwag.SwaggerGeneration.AspNetCore" Version="12.3.0" />
   </ItemGroup>
 
   <ItemGroup>
