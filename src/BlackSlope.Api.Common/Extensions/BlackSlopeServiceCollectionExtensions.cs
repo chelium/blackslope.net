@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

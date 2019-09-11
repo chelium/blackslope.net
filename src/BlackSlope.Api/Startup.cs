@@ -31,9 +31,9 @@ namespace BlackSlope.Api
             ApplicationConfiguration(services);
             CorsConfiguration(services);
 
-            //services.AddSwagger(HostConfig.Swagger);
+            services.AddSwagger(HostConfig.Swagger);
             services.AddAzureAd(HostConfig.AzureAd);
-            services.AddAutoMapper(typeof(Startup));
+            // services.AddAutoMapper(typeof(MovieProfile), typeof(MovieResponseProfile));
             services.AddCorrelation();
             services.AddTransient<IFileSystem, FileSystem>();
             services.AddTransient<IVersionService, AssemblyVersionService>();
