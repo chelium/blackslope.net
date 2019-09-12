@@ -9,7 +9,7 @@ namespace BlackSlope.Api.Operations.Movies.MapperProfiles
         public CreateMovieRequestProfile()
         {
             CreateMap<CreateMovieViewModel, MovieDomainModel>()
-                .ForMember(x => x.Id, c => c.Ignore())
+                .ForMember(x => x.Id, opt => opt.Ignore())
                 .ReverseMap();
         }
     }

@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <LangVersion>7.2</LangVersion>
+    <PackageId>BlackSlope.Client</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>BlackSlope</Authors>
+    <Company>BlackSlope</Company>
   </PropertyGroup>
 
   <ItemGroup>
